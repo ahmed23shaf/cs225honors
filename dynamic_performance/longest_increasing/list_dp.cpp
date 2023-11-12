@@ -11,7 +11,7 @@ int lengthOfLIS_dp(vector<int>& nums)
         return 0;
     }
 
-    // "cache" array
+    // "memoization" array
     vector<int> LIS(n, 1);
 
     for (int i = nums.size()-1; i >= 0; i--) {
